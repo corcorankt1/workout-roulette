@@ -36,13 +36,24 @@ app.controller("listController", function($scope, listService){
 			}
 		});
 	});
-	console.log(biceps);
-	console.log(shoulders);
-	console.log(core);
-	console.log(chest);
-	console.log(triceps);
-	console.log(calves);
-	console.log(glutes);
-	console.log(back);
-	console.log(quads);
+
+	var arr = []
+	while(arr.length < 8){
+  	var randomnumber=Math.ceil(Math.random()*biceps.length)
+  	var found=false;
+  	for(var i=0;i<arr.length;i++){
+	if(arr[i]==randomnumber){found=true;break}
+  	}
+  	if(!found)arr[arr.length]=randomnumber;
+	}
+	console.log(arr);
+	$scope.exercise1 = biceps[arr[0]].name;
+	$scope.exercise2 = biceps[arr[1]].name;
+	$scope.exercise3 = biceps[arr[2]].name;
+	$scope.exercise4 = biceps[arr[3]].name;
+	$scope.exercise5 = biceps[arr[4]].name;
+	$scope.exercise6 = biceps[arr[5]].name;
+	$scope.exercise7 = biceps[arr[6]].name;
+	$scope.exercise8 = biceps[arr[7]].name;
+
 });
