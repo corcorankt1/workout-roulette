@@ -1,6 +1,6 @@
 var app = angular.module("workout");
 
-app.controller("mainController", function($http, listService){
+app.controller("mainController", function($http, listService, idService){
 	var exercises = [];
 	$http({
 		method: "GET",
@@ -250,11 +250,16 @@ app.controller("mainController", function($http, listService){
 			exercises.push({name: elem.name, muscles: elem.muscles, description: elem.description});
 		};
 	});
-		// console.log(exercises);
+		console.log(exercises);
 		listService.getData(exercises);
 	}),
 	function(response){
 		console.log("Fail");
 	};
+	$(".submit").click(function(){
+		var id = $(".selected").attr("id");
+		console.log(id);
+		idService.getData(id);
+	});
 });
 
