@@ -1,0 +1,71 @@
+.bodyPic {
+  background-image: url("body1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 610px;
+}
+.glyphicon {
+  color: #ff0080;
+  font-size: 20px;
+  position: absolute;
+}
+#abs.glyphicon {
+  left: 23.7%;
+  top: 50%;
+}
+#chest.glyphicon {
+  left: 23.7%;
+  top: 30%;
+}
+#bisLeft.glyphicon {
+  left: 13%;
+  top: 35%;
+}
+#bisRight.glyphicon {
+  left: 34%;
+  top: 35%;
+}
+#quadLeft.glyphicon {
+  left: 16%;
+  top: 65%;
+}
+#quadRight.glyphicon {
+  left: 31%;
+  top: 65%;
+}
+#shoulderLeft.glyphicon {
+  left: 65%;
+  top: 25%;
+}
+#shoulderRight.glyphicon {
+  left: 82%;
+  top: 25%;
+}
+#upper.glyphicon {
+  left: 73.5%;
+  top: 45%;
+}
+#leftGlute.glyphicon {
+  left: 67%;
+  top: 60%;
+}
+#rightGlute.glyphicon {
+  left: 80%;
+  top: 60%;
+}
+#thighLeft.glyphicon {
+  left: 67%;
+  top: 75%;
+}
+#thighRight.glyphicon {
+  left: 80%;
+  top: 75%;
+}
+#trisLeft.glyphicon {
+  left: 62%;
+  top: 35%;
+}
+#trisRight.glyphicon {
+  left: 85%;
+  top: 35%;
+}

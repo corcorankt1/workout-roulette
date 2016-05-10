@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Workout Roulette</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>
+		
+		Workout Roulette
+	</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel = "stylesheet" type= "text/css" href="giph.css" >
+<link rel = "stylesheet" type= "text/css" href="style.css" >
+
 </head>
-<body ng-app="workout" ng-controller="mainController">
-	<p class="selected" id="trisRight">Right Tricep</p>
-	<a href="#/partial1" class="submit">Test Link</a>
-	<ng-view></ng-view>
-	
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/angular-route.min.js"></script>
-	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="index.js"></script>
-	<script type="text/javascript" src="controllers/mainController.js"></script>
-	<script type="text/javascript" src="services/list-service.js"></script>
-	<script type="text/javascript" src="services/id-service.js"></script>
-	<script type="text/javascript" src="controllers/listController.js"></script>
-	<script type="text/javascript" src="routes/routes.js"></script>
-	<script type="text/javascript" src="directives/exercise.js"></script>
+
+<body ng-app ="" >
+
+
+<header class = "jumbotron">
+
+Workout Roulette
+
+</header>
+
+
+
+<div class = "container">
+<h2> What would you like to work out? </h2>
+
+
+
+
+
+<section class = "row">
+
+
+
+<div class = "col-md-8  bodyPic">
+<span class = "glyphicon glyphicon-screenshot" id = "chest" title = "Chest" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "bisLeft" title = "bicepts" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "bisRight" title = "bicepts" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "abs" title = "Core" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "quadRight" title = "Quadracept" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "quadLeft" title = "Quadracept" ></span>
+
+
+<span class = "glyphicon glyphicon-screenshot" id = "shoulderLeft" title = "Shoulders" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "shoulderRight" title = "Shoulders" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "upper" title = "Upper Back" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "leftGlute" title = "Glutes" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "rightGlute" title = "Glutes" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "thighRight" title = "Thighs" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "thighLeft" title = "Thighs" ></span>
+
+<span class = "glyphicon glyphicon-screenshot" id = "trisLeft" title = "Tricept" ></span>
+<span class = "glyphicon glyphicon-screenshot" id = "trisRight" title = "Tricept" ></span>
+
+</div>
+
+
+
+<div class = "col-xs-4 list">
+
+<p class = "excersizes"> here are your exercises</p>
+</div>
+
+</section>
+
+
 </body>
 </html>
