@@ -1,11 +1,31 @@
+body {
+  color: #373737;
+}
 header {
   text-align: center;
-  font-size: 90px;
+  background-color: #373737;
 }
-.excersizes {
+header h1 {
+  color: #fac90d;
+  margin: 0;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.exercises {
   text-align: center;
-  height: 554px;
+  height: 598px;
+  float: none;
+  font-size: 24px;
 }
 .list {
-  border: solid;
+  border: solid 1px #fac90d;
+}
+.row {
+  padding-top: 20px;
+}
+.roulette {
+  text-align: center;
+  margin: 0px auto;
+  display: inline-block;
 }

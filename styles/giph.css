@@ -1,11 +1,11 @@
 .bodyPic {
-  background-image: url("body1.png");
+  background-image: url("images/body1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 610px;
 }
 .glyphicon {
-  color: #ff0080;
+  color: #ee386b;
   font-size: 20px;
   position: absolute;
 }
