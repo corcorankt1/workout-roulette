@@ -104,12 +104,20 @@ app.controller("listController", function($scope, listService, idService){
   	if(!found)arr[arr.length]=randomnumber;
 	}
 	$scope.exercise1 = array[arr[0]].name;
+	$scope.description1 = array[arr[0]].description;
 	$scope.exercise2 = array[arr[1]].name;
+	$scope.description2 = array[arr[1]].description;
 	$scope.exercise3 = array[arr[2]].name;
+	$scope.description3 = array[arr[2]].description;
 	$scope.exercise4 = array[arr[3]].name;
+	$scope.description4 = array[arr[3]].description;
 	$scope.exercise5 = array[arr[4]].name;
+	$scope.description5 = array[arr[4]].description;
 	$scope.exercise6 = array[arr[5]].name;
+	$scope.description6 = array[arr[5]].description;
 	$scope.exercise7 = array[arr[6]].name;
+	$scope.description7 = array[arr[6]].description;
 	$scope.exercise8 = array[arr[7]].name;
+	$scope.description8 = array[arr[7]].description;
 
 });

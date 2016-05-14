@@ -14,7 +14,9 @@
 
 	<div class = "container">
 		<section class = "row">
-			<h2> What would you like to work out? </h2>
+			<h2> What would you like to work out? 
+			<a class="roulette" href="#/partial1">Roulette!</a>
+		</div></h2>
 			<div class = "col-md-8  bodyPic">
 				<span class = "glyphicon glyphicon-screenshot" id = "chest" title = "Chest" ></span>
 				<span class = "glyphicon glyphicon-screenshot" id = "bisLeft" title = "biceps" ></span>
@@ -32,16 +34,19 @@
 				<span class = "glyphicon glyphicon-screenshot" id = "trisLeft" title = "Tricep" ></span>
 				<span class = "glyphicon glyphicon-screenshot" id = "trisRight" title = "Tricep" ></span>
 			</div>
-		<div class = "col-xs-4 list">
-			<p class = "exercises"> 3 Sets, 10 Reps</p>
+		
+   <div class = "col-md-4 part">
+			 <h2> Your list of Excersizes</h2>
 			<ng-view></ng-view>
-		</div>
+		
+
+</div>
+
+
 	</section>
 
 	<div class="row">
-		<div class="col-xs-8">
-			<a class="roulette" href="#/partial1">Roulette!</a>
-		</div>
+		
 	</div>
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
