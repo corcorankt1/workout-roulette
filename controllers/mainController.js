@@ -256,7 +256,7 @@ app.controller("mainController", function($http, listService, idService){
 	function(response){
 		console.log("Fail");
 	};
-	$(".submit").click(function(){
+	$(".roulette").click(function(){
 		var id = $(".selected").attr("id");
 		console.log(id);
 		idService.getData(id);

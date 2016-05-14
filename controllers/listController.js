@@ -3,6 +3,7 @@ var app = angular.module("workout");
 app.controller("listController", function($scope, listService, idService){
 	var exercise = listService.sendData();
 	var id = idService.sendData();
+	console.log(id);
 	var biceps = [];
 	var shoulders = [];
 	var core = [];
