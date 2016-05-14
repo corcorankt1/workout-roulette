@@ -267,7 +267,10 @@ app.controller("mainController", function($http, listService, idService, $scope)
 		console.log("Fail");
 	};
 	$(".roulette").click(function(){
-		var id = $(".selected").attr("id");
+		var id = [];
+		$(".selected").each(function(){
+			id.push($(this).attr("id"));
+		});
 		console.log(id);
 		idService.getData(id);
 	});

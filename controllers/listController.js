@@ -3,7 +3,6 @@ var app = angular.module("workout");
 app.controller("listController", function($scope, listService, idService){
 	var exercise = listService.sendData();
 	var id = idService.sendData();
-	console.log(id);
 	var biceps = [];
 	var shoulders = [];
 	var core = [];
@@ -131,45 +130,65 @@ app.controller("listController", function($scope, listService, idService){
 			}
 		});
 	});
+	id.forEach(function(id){
 	switch(id){
 		case "bisLeft":
 		case "bisRight":
-			array = biceps
+			biceps.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		case "chest":
-			array = chest
+			chest.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		case "abs":
-			array = core
+			core.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		case "quadLeft":
 		case "quadRight":
-			array = quads
+			quads.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});	
 			break;
 		case "shoulderLeft":
 		case "shoulerRight":
-			array = shoulders
+			shoulders.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});	
 			break;
 		case "upper":
-			array = back
+			back.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});	
 			break;
 		case "leftGlute":
 		case "rightGlute":
 		case "thighRight":
 		case "thighLeft":
-			array = glutes
+			glutes.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		case "trisLeft":
 		case "trisRight":
-			array = triceps
+			triceps.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		case "calfLeft":
 		case "calfRight":
-			array = calves
+			calves.forEach(function(elem){
+				array.push({name: elem.name, description: elem.description});
+			});
 			break;
 		default:
 			array = exercise
 	}
+});
 	console.log(array);
 	var arr = []
 	while(arr.length < 8){
