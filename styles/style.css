@@ -23,6 +23,9 @@ header h1 {
 .list {
   background-color: #fac90d;
 }
+.bodyPic {
+  margin-bottom: 100px;
+}
 .row {
   padding-top: 20px;
 }
@@ -30,6 +33,22 @@ header h1 {
   text-align: center;
   margin: 0px auto;
   display: inline-block;
+  color: #fac90d;
+}
+.roulette:visited {
+  color: #fac90d;
+}
+.roulette:hover {
+  color: #5fc6b5;
+}
+.restart {
+  color: #373737;
+}
+.restart:visited {
+  color: #373737;
+}
+.restart:hover {
+  color: #5fc6b5;
 }
 .partial {
   text-align: center;
@@ -37,4 +56,12 @@ header h1 {
 .part {
   background-color: #fac90d;
   height: 610px;
+}
+footer {
+  text-align: center;
+  background-image: url("images/fitness-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  color: #fff;
 }
