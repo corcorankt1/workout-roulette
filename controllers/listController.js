@@ -120,5 +120,8 @@ app.controller("listController", function($scope, listService, idService){
 	$scope.description7 = array[arr[6]].description;
 	$scope.exercise8 = array[arr[7]].name;
 	$scope.description8 = array[arr[7]].description;
+	$(".restart").click(function(){
+		$(".glyphicon").removeClass("selected");
+});
 
 });
