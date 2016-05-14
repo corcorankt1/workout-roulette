@@ -1,6 +1,6 @@
 var app = angular.module("workout");
 
-app.controller("mainController", function($http, listService, idService){
+app.controller("mainController", function($http, listService, idService, $scope){
 	var exercises = [];
 	$http({
 		method: "GET",
@@ -252,6 +252,16 @@ app.controller("mainController", function($http, listService, idService){
 	});
 		console.log(exercises);
 		listService.getData(exercises);
+	}),
+	function(response){
+		console.log("Fail");
+	};
+	$http({
+		method: "GET",
+		url: "http://quotes.rest/qod.json"
+	}).then(function(response){
+		console.log(response);
+		$scope.quote = response.data.contents.quotes[0].quote;
 	}),
 	function(response){
 		console.log("Fail");
