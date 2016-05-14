@@ -6,5 +6,9 @@ app.config(function($routeProvider){
 		controller: "listController",
 		templateUrl: "partials/exercise-list.html"
 	})
+	.when("/partial2",{
+		controller:"blankController",
+		templateUrl: "partials/exercise-description.html"
+	})
 	.otherwise({redirectTo: "/"});
 });

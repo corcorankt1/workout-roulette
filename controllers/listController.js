@@ -97,7 +97,7 @@ app.controller("listController", function($scope, listService, idService){
 	console.log(array);
 	var arr = []
 	while(arr.length < 8){
-  	var randomnumber=Math.ceil(Math.random()*array.length)
+  	var randomnumber=Math.floor(Math.random()*array.length)
   	var found=false;
   	for(var i=0;i<arr.length;i++){
 	if(arr[i]==randomnumber){found=true;break}
