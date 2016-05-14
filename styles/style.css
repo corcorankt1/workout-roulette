@@ -19,12 +19,13 @@ header h1 {
   text-align: center;
   float: none;
   font-size: 24px;
+  list-style: none;
+}
+.exercises li {
+  text-align: left;
 }
 .list {
   background-color: #fac90d;
-}
-.bodyPic {
-  margin-bottom: 100px;
 }
 .row {
   padding-top: 20px;
@@ -37,15 +38,18 @@ header h1 {
 }
 .roulette:visited {
   color: #fac90d;
+  text-transform: none;
 }
 .roulette:hover {
   color: #5fc6b5;
 }
 .restart {
   color: #373737;
+  margin-top: 25px;
 }
 .restart:visited {
   color: #373737;
+  text-transform: none;
 }
 .restart:hover {
   color: #5fc6b5;
@@ -57,6 +61,14 @@ header h1 {
   background-color: #fac90d;
   height: 610px;
 }
+blockquote {
+  text-align: center;
+  font-size: 36px;
+  font-style: italic;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: #ee386b;
+}
 footer {
   text-align: center;
   background-image: url("images/fitness-footer.jpg");
@@ -64,4 +76,8 @@ footer {
   background-size: cover;
   height: 350px;
   color: #fff;
+}
+footer p {
+  padding-top: 50px;
+  font-size: 24px;
 }
