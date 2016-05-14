@@ -3,14 +3,17 @@ body {
 }
 header {
   text-align: center;
-  background-color: #373737;
+  background-image: url("images/fitness-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  background-position: 0px -100px;
 }
 header h1 {
   color: #fac90d;
   margin: 0;
   font-size: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
 }
 .exercises {
   text-align: center;
