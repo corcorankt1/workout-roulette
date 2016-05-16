@@ -89,6 +89,8 @@ app.controller("listController", function($scope, listService, idService){
 		description: "Start by holding the bar against your body with your hands at shoulder-width on the bar. Keeping your back in its natural curve, bend your hips and knees (as you would in a squat), lowering the bar to just above your knees. Explosively extend your hips as if jumping, while at the same time shrugging your shoulders and pulling the bar straight up in front of your torso. As the bar reaches chest level, bend your elbows and flip your wrists to catch the bar at shoulder level. In this stance, your palms should face the ceiling, and your shoulders should be pointing foward. Make sure at this stage that your back is straight, and that the bar is at your center of gravity. Bend your hips and knees as you catch the bar to absorb the impact."
 	}
 	];
+	
+//Break data into individual arrays based on muscle groups
 	exercise.forEach(function(elem){
 		elem.muscles.forEach(function(el){
 			switch(el){
@@ -130,8 +132,8 @@ app.controller("listController", function($scope, listService, idService){
 			}
 		});
 	});
-	console.log(shoulders);
-	console.log(chest);
+
+//Get final array based on id from index page
 	id.forEach(function(each){
 	switch(each){
 		case "bisLeft":
@@ -191,7 +193,8 @@ app.controller("listController", function($scope, listService, idService){
 			array = exercise
 	}
 });
-	console.log(array);
+
+//Randomize 8 numbers 
 	var arr = []
 	while(arr.length < 8){
   	var randomnumber=Math.floor(Math.random()*array.length)
@@ -201,6 +204,8 @@ app.controller("listController", function($scope, listService, idService){
   	}
   	if(!found)arr[arr.length]=randomnumber;
 	}
+
+//Use random numbers to display data on page
 	$scope.exercise1 = array[arr[0]].name;
 	$scope.description1 = array[arr[0]].description.replace(/(<([^>]+)>)/ig,"");
 	$scope.exercise2 = array[arr[1]].name;
@@ -217,11 +222,23 @@ app.controller("listController", function($scope, listService, idService){
 	$scope.description7 = array[arr[6]].description.replace(/(<([^>]+)>)/ig,"");
 	$scope.exercise8 = array[arr[7]].name;
 	$scope.description8 = array[arr[7]].description.replace(/(<([^>]+)>)/ig,"");
+	
+//Clear selected glyphicons on restart
 	$(".restart").click(function(){
 		$(".glyphicon").removeClass("selected");
-	$(".check").click(function(){
-		$(this).toggleClass("checked");
-	})
+	});
+
+//Add Line-through when done box checked
+	// $(".check").change(function(){
+	// 	var $checkbox = $(this);
+	// 	if($checkbox.prop("checked")){
+	// 		$checkbox.addClass("checked");
+	// 	} else {
+	// 		$checkbox.removeClass("checked");
+	// 	}
+	// });
+
+//Set checks to false for show-hide functionality
 	$scope.check1 = false;
 	$scope.check2 = false;
 	$scope.check3 = false;
@@ -230,6 +247,5 @@ app.controller("listController", function($scope, listService, idService){
 	$scope.check6 = false;
 	$scope.check7 = false;
 	$scope.check8 = false;
-});
 
 });
