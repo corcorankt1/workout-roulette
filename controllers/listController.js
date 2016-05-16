@@ -219,6 +219,9 @@ app.controller("listController", function($scope, listService, idService){
 	$scope.description8 = array[arr[7]].description.replace(/(<([^>]+)>)/ig,"");
 	$(".restart").click(function(){
 		$(".glyphicon").removeClass("selected");
+	$(".check").click(function(){
+		$(this).toggleClass("checked");
+	})
 	$scope.check1 = false;
 	$scope.check2 = false;
 	$scope.check3 = false;

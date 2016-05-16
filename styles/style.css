@@ -21,6 +21,15 @@ header p {
   font-size: 24px;
   font-style: italic;
 }
+header #description {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  top: 120px;
+}
 .exercises {
   text-align: center;
   float: none;
@@ -68,6 +77,9 @@ header p {
 }
 .partial a {
   color: #373737;
+}
+.checked {
+  text-decoration: line-through;
 }
 .part {
   background-color: #fac90d;
