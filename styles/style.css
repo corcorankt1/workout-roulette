@@ -16,6 +16,11 @@ header h1 {
   font-size: 80px;
   padding-top: 100px;
 }
+header p {
+  color: #fac90d;
+  font-size: 24px;
+  font-style: italic;
+}
 .exercises {
   text-align: center;
   float: none;
@@ -61,6 +66,7 @@ header h1 {
 .part {
   background-color: #fac90d;
   height: 610px;
+  overflow-y: scroll;
 }
 blockquote {
   text-align: center;
