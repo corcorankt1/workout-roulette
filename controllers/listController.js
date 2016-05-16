@@ -130,8 +130,10 @@ app.controller("listController", function($scope, listService, idService){
 			}
 		});
 	});
-	id.forEach(function(id){
-	switch(id){
+	console.log(shoulders);
+	console.log(chest);
+	id.forEach(function(each){
+	switch(each){
 		case "bisLeft":
 		case "bisRight":
 			biceps.forEach(function(elem){
@@ -155,7 +157,7 @@ app.controller("listController", function($scope, listService, idService){
 			});	
 			break;
 		case "shoulderLeft":
-		case "shoulerRight":
+		case "shoulderRight":
 			shoulders.forEach(function(elem){
 				array.push({name: elem.name, description: elem.description});
 			});	
@@ -217,6 +219,14 @@ app.controller("listController", function($scope, listService, idService){
 	$scope.description8 = array[arr[7]].description.replace(/(<([^>]+)>)/ig,"");
 	$(".restart").click(function(){
 		$(".glyphicon").removeClass("selected");
+	$scope.check1 = false;
+	$scope.check2 = false;
+	$scope.check3 = false;
+	$scope.check4 = false;
+	$scope.check5 = false;
+	$scope.check6 = false;
+	$scope.check7 = false;
+	$scope.check8 = false;
 });
 
 });

@@ -63,6 +63,12 @@ header p {
 .partial {
   text-align: center;
 }
+.partial input {
+  padding-right: 10px;
+}
+.partial a {
+  color: #373737;
+}
 .part {
   background-color: #fac90d;
   height: 610px;

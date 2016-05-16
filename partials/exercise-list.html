@@ -1,22 +1,45 @@
 <section class = "partial">
 
 <ul class="exercises">
-	<li>{{exercise1}}  <input type="checkbox" ng-model="check1" aria-label="Toggle ngHide">?</li>
-	<p class="check-element animate-show" ng-show="check1">{{description1}}</p>
-	<li>{{exercise2}}  <input type="checkbox" ng-model="check2" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check2">{{description2}}</p>
-	<li>{{exercise3}}  <input type="checkbox" ng-model="check3" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check3">{{description3}}</p>
-	<li>{{exercise4}}  <input type="checkbox" ng-model="check4" aria-label="Toggle ngHide"> ?</li> 
-	<p class="check-element animate-show" ng-show="check4">{{description4}}</p>
-	<li>{{exercise5}}  <input type="checkbox" ng-model="check5" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check5">{{description5}}</p>
-	<li>{{exercise6}}  <input type="checkbox" ng-model="check6" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check6">{{description6}}</p>
-	<li>{{exercise7}}  <input type="checkbox" ng-model="check7" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check7">{{description7}}</p>
-	<li>{{exercise8}}  <input type="checkbox" ng-model="check8" aria-label="Toggle ngHide"> ?</li>
-	<p class="check-element animate-show" ng-show="check8">{{description8}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done"> {{exercise1}}  <a href ng-click="check1 = !check1"><i class="fa fa-question-circle-o"></i></a></li>
+		<p ng-show="check1">{{description1}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise2}}  <a href ng-click="check2 = !check2"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check2">{{description2}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise3}}  <a href ng-click="check3 = !check3"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check3">{{description3}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise4}}  <a href ng-click="check4 = !check4"<i class="fa fa-question-circle-o"></i></a></li> 
+	<p ng-show="check4">{{description4}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise5}}  <a href ng-click="check5 = !check5"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check5">{{description5}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise6}} <a href ng-click="check6 = !check6"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check6">{{description6}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise7}} <a href ng-click="check7 =!check7"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check7">{{description7}}</p>
+	<li>
+		<label for="done"></label>
+		<input type="checkbox" name="done">
+		{{exercise8}} <a href ng-click="check8 = !check8"><i class="fa fa-question-circle-o"></i></a></li>
+	<p ng-show="check8">{{description8}}</p>
 
 <restart></restart>
 </section>
