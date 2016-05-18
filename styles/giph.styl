@@ -3,67 +3,67 @@ $glyph-color = #EE386B
 $gliph-size =  20px
 $gliph-pos = absolute
 
-$bi-pos = 35%
-$quad-pos = 65%
+$bi-pos = 28%
+$quad-pos = 56%
 
-$shoulder-pos = 25%
-$tri-pos = 35%
+$shoulder-pos = 21%
+$tri-pos = 29%
 
-$backLegLeft = 67%
-$backLegRight = 80%
+$backLegLeft = 70%
+$backLegRight = 81%
 $glute-pos = 60%
-$thigh-pos = 75%
+$thigh-pos = 60%
 
 
 
 .bodyPic
-	background-image url('images/body1.png')
+	background-image url('images/body4.png')
 	background-repeat no-repeat
 	background-size cover
-	height 610px
+	height 930px
    
 
 .glyphicon
 	color $glyph-color
 	font-size $gliph-size
 	position $gliph-pos
+	
 #abs.glyphicon
-	left 23.7%
-	top 50%
+	left 29%
+	top 35%
 	
 #chest.glyphicon
-	left 23.7%
-	top 30%
+	left 28.9%
+	top 25%
 
 #bisLeft.glyphicon
-	left 13%
+	left 19%
 	top $bi-pos	
 	
 #bisRight.glyphicon
-	left 34%
+	left 39%
 	top $bi-pos
 
 #quadLeft.glyphicon
-	left 16%
+	left 22%
 	top $quad-pos
 	
 #quadRight.glyphicon	
-	left 31%
+	left 35.5%
 	top $quad-pos
 	
 	
 #shoulderLeft.glyphicon
-	left 65%
+	left 68%
 	top $shoulder-pos
 	
 #shoulderRight.glyphicon	
-	left 82%
+	left 83%
 	top $shoulder-pos
 	
 #upper.glyphicon
-	left 73.5%
-	top 45%	
-
+	left 75.5%
+	top 30%	
 
 
 #leftGlute.glyphicon
@@ -83,12 +83,31 @@ $thigh-pos = 75%
 	top $thigh-pos
 
 #trisLeft.glyphicon
-	left 62%
+	left 64%
 	top $tri-pos
 	
 #trisRight.glyphicon	
-	left 85%
+	left 87%
 	top $tri-pos
 	
 .selected 
 	color #5FC6B5
+	
+@media (max-width: 2000px)
+	.bodyPic 
+		height 800px
+		width 930px
+
+
+// @media (min-width: 235px)
+// 	.bodyPic 
+// 		height 900px
+// 		width 100%
+// @media (min-width: 800px)
+// 	.bodyPic 
+// 		height 610px	
+// 		width 800px	
+
+		
+
+		
