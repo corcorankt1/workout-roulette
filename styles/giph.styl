@@ -10,7 +10,7 @@ $shoulder-pos = 21%
 $tri-pos = 29%
 
 $backLegLeft = 70%
-$backLegRight = 81%
+$backLegRight = 78.5%
 $glute-pos = 60%
 $thigh-pos = 60%
 
@@ -29,11 +29,11 @@ $thigh-pos = 60%
 	position $gliph-pos
 	
 #abs.glyphicon
-	left 29%
+	left 28.5%
 	top 35%
 	
 #chest.glyphicon
-	left 28.9%
+	left 28.5%
 	top 25%
 
 #bisLeft.glyphicon
@@ -41,7 +41,7 @@ $thigh-pos = 60%
 	top $bi-pos	
 	
 #bisRight.glyphicon
-	left 39%
+	left 38%
 	top $bi-pos
 
 #quadLeft.glyphicon
@@ -49,12 +49,12 @@ $thigh-pos = 60%
 	top $quad-pos
 	
 #quadRight.glyphicon	
-	left 35.5%
+	left 35%
 	top $quad-pos
 	
 	
 #shoulderLeft.glyphicon
-	left 68%
+	left 66%
 	top $shoulder-pos
 	
 #shoulderRight.glyphicon	
@@ -62,7 +62,7 @@ $thigh-pos = 60%
 	top $shoulder-pos
 	
 #upper.glyphicon
-	left 75.5%
+	left 74.4%
 	top 30%	
 
 
@@ -87,17 +87,80 @@ $thigh-pos = 60%
 	top $tri-pos
 	
 #trisRight.glyphicon	
-	left 87%
+	left 84.5%
 	top $tri-pos
 	
 .selected 
 	color #5FC6B5
+.part
+		background-color #fac90d
+		height 1160px
+		width 650px	
+		overflow-y scroll
 	
 @media (max-width: 2000px)
 	.bodyPic 
-		height 800px
-		width 930px
+		width 1350px
+		height 1190px
+		
+	
+	
+@media (max-width: 1999px)
+	.bodyPic 
+		width 1250px
+		height 1050px
+		
+	.part
+		width 550px
+		height 1050px
+		
+@media (max-width: 1799px)
+	.bodyPic 
+		width 1000px
+		height 850px
+		
+	.part
+		width 550px
+		height 850px		
 
+
+@media (max-width: 1599px)
+	.bodyPic 
+		width 900px
+		height 760px
+		
+	.part
+		width 500px
+		height 760px
+	
+@media (max-width: 1399px)
+	.bodyPic 
+		width 722px
+		height 630px
+		
+	.part
+		width 400px
+		height 630px
+		
+@media (max-width: 1123px)
+	.bodyPic 
+		width 600px
+		height 520px
+		
+	.part
+		width 400px
+		height 520px
+		
+	
+		
+// @media (max-width: 1500px)
+// 	.bodyPic 
+// 		height 800px
+// 		width 930px
+// @media (max-width: 1500px)
+// 	.bodyPic 
+// 		height 800px
+// 		width 930px
 
 // @media (min-width: 235px)
 // 	.bodyPic 

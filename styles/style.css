@@ -13,6 +13,7 @@ header {
 header h1 {
   color: #fac90d;
   margin: 0;
+  font-family: 'Bitter', serif;
   font-size: 80px;
   padding-top: 100px;
 }
@@ -83,7 +84,6 @@ header #description {
 }
 .part {
   background-color: #fac90d;
-  height: 800px;
   overflow-y: scroll;
 }
 blockquote {
@@ -105,4 +105,27 @@ footer {
 footer p {
   padding-top: 50px;
   font-size: 24px;
+}
+figure {
+  display: inline-block;
+  margin: 20px;
+}
+figcaption {
+  font-size: 20px;
+}
+#leah {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 50%;
+}
+#katie {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+}
+li {
+  border-style: double;
+  margin: 3px;
 }

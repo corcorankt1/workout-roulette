@@ -10,11 +10,11 @@
   position: absolute;
 }
 #abs.glyphicon {
-  left: 29%;
+  left: 28.5%;
   top: 35%;
 }
 #chest.glyphicon {
-  left: 28.9%;
+  left: 28.5%;
   top: 25%;
 }
 #bisLeft.glyphicon {
@@ -22,7 +22,7 @@
   top: 28%;
 }
 #bisRight.glyphicon {
-  left: 39%;
+  left: 38%;
   top: 28%;
 }
 #quadLeft.glyphicon {
@@ -30,11 +30,11 @@
   top: 56%;
 }
 #quadRight.glyphicon {
-  left: 35.5%;
+  left: 35%;
   top: 56%;
 }
 #shoulderLeft.glyphicon {
-  left: 68%;
+  left: 66%;
   top: 21%;
 }
 #shoulderRight.glyphicon {
@@ -42,7 +42,7 @@
   top: 21%;
 }
 #upper.glyphicon {
-  left: 75.5%;
+  left: 74.4%;
   top: 30%;
 }
 #leftGlute.glyphicon {
@@ -50,7 +50,7 @@
   top: 60%;
 }
 #rightGlute.glyphicon {
-  left: 81%;
+  left: 78.5%;
   top: 60%;
 }
 #thighLeft.glyphicon {
@@ -58,7 +58,7 @@
   top: 60%;
 }
 #thighRight.glyphicon {
-  left: 81%;
+  left: 78.5%;
   top: 60%;
 }
 #trisLeft.glyphicon {
@@ -66,15 +66,71 @@
   top: 29%;
 }
 #trisRight.glyphicon {
-  left: 87%;
+  left: 84.5%;
   top: 29%;
 }
 .selected {
   color: #5fc6b5;
 }
+.part {
+  background-color: #fac90d;
+  height: 1160px;
+  width: 650px;
+  overflow-y: scroll;
+}
 @media (max-width: 2000px) {
   .bodyPic {
-    height: 800px;
-    width: 930px;
+    width: 1350px;
+    height: 1190px;
+  }
+}
+@media (max-width: 1999px) {
+  .bodyPic {
+    width: 1250px;
+    height: 1050px;
+  }
+  .part {
+    width: 550px;
+    height: 1050px;
+  }
+}
+@media (max-width: 1799px) {
+  .bodyPic {
+    width: 1000px;
+    height: 850px;
+  }
+  .part {
+    width: 550px;
+    height: 850px;
+  }
+}
+@media (max-width: 1599px) {
+  .bodyPic {
+    width: 900px;
+    height: 760px;
+  }
+  .part {
+    width: 500px;
+    height: 760px;
+  }
+}
+@media (max-width: 1399px) {
+  .bodyPic {
+    width: 722px;
+    height: 630px;
+  }
+  .part {
+    width: 400px;
+    height: 630px;
+  }
+}
+@media (max-width: 1123px) {
+  .bodyPic {
+    width: 600px;
+    height: 520px;
+  }
+  .part {
+    width: 400px;
+    height: 520px;
   }
 }

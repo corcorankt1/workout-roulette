@@ -2,45 +2,62 @@
 <html>
 <head>
 	<title>Workout Roulette</title>
+
+<link href='https://fonts.googleapis.com/css?family=Bitter|Inconsolata' rel='stylesheet' type='text/css'>
+
+
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 	<link rel = "stylesheet" type= "text/css" href="styles/giph.css" >
 	<link rel = "stylesheet" type= "text/css" href="styles/style.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body ng-app ="workout" ng-controller="mainController">
 	<header>
-		<h1>WORKOUT ROULETTE</h1>
+		<h1 >WORKOUT ROULETTE</h1>
 		<p>plateaus are a thing of the past</p>
 		<p id="description">Workout Roulette keeps you from hitting plateaus with your workouts by randomizing exercises and keeping your muscles guessing.</p>
 	</header>
 
 	<div class = "container">
-		<section class = "row">
+		<section class = "row top">
 			<h3> Select one or more muscle groups to workout -  
 			<a class="roulette" href="#/partial1">Roulette!</a>
 		</div></h3>
 		
+		
 			<div class = "col-md-8 bodyPic">
-				<span class = "glyphicon glyphicon-screenshot" id = "chest" title = "Chest" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "bisLeft" title = "biceps" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "bisRight" title = "biceps" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "abs" title = "Core" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "quadRight" title = "Quadraceps" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "quadLeft" title = "Quadraceps" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "shoulderLeft" title = "Shoulders" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "shoulderRight" title = "Shoulders" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "upper" title = "Back" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "leftGlute" title = "Glutes" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "rightGlute" title = "Glutes" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "thighRight" title = "Thighs" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "thighLeft" title = "Thighs" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "trisLeft" title = "Tricep" ></span>
-				<span class = "glyphicon glyphicon-screenshot" id = "trisRight" title = "Tricep" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "chest" title = "Chest"  data-toggle="tooltip" data-placement="bottom" ></span>
+
+				<span class = "glyphicon glyphicon-screenshot" id = "bisLeft" title = "Biceps" data-toggle="tooltip" data-placement="bottom"  ></span>
+
+				<span class = "glyphicon glyphicon-screenshot" id = "bisRight" title = "Biceps" data-toggle="tooltip" data-placement="bottom" ></span>
+
+
+			<span class = "glyphicon glyphicon-screenshot" id="abs" data-toggle="tooltip" data-placement="bottom" title="Core"></span>
+
+			
+
+				<span class = "glyphicon glyphicon-screenshot" id = "quadRight" title = "Quadraceps" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "quadLeft" title = "Quadraceps" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "shoulderLeft" title = "Shoulders" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "shoulderRight" title = "Shoulders" data-toggle="tooltip" data-placement="bottom"  ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "upper" title = "Back" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "leftGlute" title = "Glutes" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "rightGlute" title = "Glutes" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "thighRight" title = "Thighs" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "thighLeft" title = "Thighs" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "trisLeft" title = "Tricep" data-toggle="tooltip" data-placement="bottom" ></span>
+				<span class = "glyphicon glyphicon-screenshot" id = "trisRight" title = "Tricep"data-toggle="tooltip" data-placement="bottom"  ></span>
 			</div>
 		
-   <div class = "col-sm-4 part">
+   <div class = "col-lg-4 part">
 			 <h2>Exercises - Perform 3 sets of 10 reps</h2>
 			<ng-view></ng-view>
 		
@@ -58,12 +75,34 @@
 	<footer>
 		<p>Meet the Creators</p>
 
+
+<figure>
+
+<img src="styles/images/catie.jpg" id = "katie">
+<figcaption>Find Katie on <a href="https://www.linkedin.com/in/katie-corcoran-70622829"> LinkedIn </a></figcaption>
+
+</figure>
+
+
+<figure>
+
+
+<img src="styles/images/leah.jpg" id = "leah">
+
+<figcaption>Find Leah on  <a href="https://www.linkedin.com/in/leah-rapp-35a521119"> LinkedIn</a> </figcaption>
+</figure>
+
+
 	</footer>
+
+
 
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-route.min.js"></script>
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
 	<script type="text/javascript" src="index.js"></script>
+
 	<script type="text/javascript" src="controllers/mainController.js"></script>
 	<script type="text/javascript" src="services/list-service.js"></script>
 	<script type="text/javascript" src="controllers/blankController.js"></script>
@@ -71,5 +110,8 @@
 	<script type="text/javascript" src="controllers/listController.js"></script>
 	<script type="text/javascript" src="routes/routes.js"></script>
 	<script type="text/javascript" src="directives/exercise.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
