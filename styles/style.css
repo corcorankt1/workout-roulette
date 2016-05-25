@@ -24,12 +24,12 @@ header p {
 }
 header #description {
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   position: relative;
   left: 20px;
-  top: 120px;
+  top: 10px;
 }
 .exercises {
   text-align: center;
@@ -128,4 +128,10 @@ figcaption {
 li {
   border-style: double;
   margin: 3px;
+}
+h3 {
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
 }
